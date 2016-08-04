@@ -8,7 +8,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test"
+    "test": "./node_modules/mocha/bin/mocha test",
+    "test-dev": "./node_modules/mocha/bin/mocha test --watch"
   },
   "keywords": [
     "array",

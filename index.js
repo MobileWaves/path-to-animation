@@ -3,6 +3,18 @@ var css = require('./css');
 
 var brain = {
   generateCss: function(input, namespace, elementWidth, elementHeight, mixinName) {
+
+    if (typeof elementWidth != 'number' && typeof elementWidth != 'string') {
+      throw new Error('elementWidth should be either a number or a string');
+    }
+
+    if (typeof elementHeight != 'number' && typeof elementHeight != 'string') {
+      throw new Error('elementHeight should be either a number or a string');
+    }
+
+    // there should be a default value for mixinName
+    mixinName = mixinName || 'curved-animation';
+
     return Object.keys(input).map(function(itemName) {
       var output = input[itemName];
 
