@@ -1,0 +1,33 @@
+{
+  "name": "path-to-animation",
+  "version": "0.0.1",
+  "description": "Generates css keyframe aniamtions string that could be saved into a file",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MobileWaves/path-to-animation.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "keywords": [
+    "array",
+    "animation",
+    "keyframes",
+    "css",
+    "predefined",
+    "interpolate",
+    "bezier",
+    "curve"
+  ],
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "dependencies": {
+    "bezier-curve": "^1.0.0",
+    "lodash": "^4.14.0"
+  },
+  "author": "Mobile Wave Solutions",
+  "license": "MIT"
+}
